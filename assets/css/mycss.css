@@ -1,0 +1,88 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+@media screen and (max-width: 480px) {
+  html, body {
+    min-width: 320px; } }
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* body {
+    background-image: url(/assets/images/win10bg.jpg);
+    background-repeat: repeat;
+} */
+body {
+  background: #eeeeee; 
+  color: #444444;
+  line-height: 1; 
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, 
+p, a, em, img, ol, ul, li, 
+form, footer, header, menu, nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%; */
+  /* font: inherit; */
+  vertical-align: baseline; 
+}
+
+article, aside, footer, header, menu, nav, section {
+  display: block; 
+}
+
+ol, ul {
+  list-style: none; 
+}
+
+body, input, select, textarea {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65; 
+}
+
+html {
+  font-size: 11pt; 
+}
+@media screen and (min-width: 480px) {
+    html {
+      font-size: 12pt; } 
+    }
+@media screen and (min-width: 600px) {
+    html {
+      font-size: 13pt; } 
+    }
+
+a {
+  transition: color 0.5s ease-in-out;
+  text-decoration: underline; 
+}
+a:hover {
+    text-decoration: none; 
+    text-emphasis: emphasis;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0; 
+}
+
+/* 
+//mobilon
+.col{
+  background: red;
+}
+// 600px felett
+@media (min-width: 600px) {
+  .col{
+    background: green;
+  }
+} */

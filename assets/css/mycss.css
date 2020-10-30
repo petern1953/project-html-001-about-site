@@ -4,8 +4,8 @@
 @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px; } }
-html {
-  box-sizing: border-box; }
+    html {
+    box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -114,6 +114,43 @@ h1, h2, h3, h4 {
 
 input, select, textarea {
   color: #555555; }
+
+input[type="submit"],
+input[type="button"],
+button,
+div.content {
+  appearance: none;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 600;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  padding: 0 1.75rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; 
+}
+
+div.content {
+    width: 32%;
+    margin: auto;
+    box-shadow: 1px 1px 0 1px #666666;
+    color: crimson; 
+
+}
+
+button:hover {
+    box-shadow: 1px 1px 0 1px #666666;
+    color: crimson; 
+}
+
+img {
+    width: 100%;
+}
 
 /* 
 //mobilon

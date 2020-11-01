@@ -57,6 +57,7 @@ nav.about {
   float: left;
   position: relative;
   top: -34px;
+  left: 4px;
   font-size: 12pt;
 }
 
@@ -213,9 +214,9 @@ ul {
   /* list-style: none;  */
   list-style-type:none;
 }
-/* ol, ul {
-  list-style: none; 
-} */
+ol {
+  margin-left: 16px; 
+}
 
 body, input, select, textarea {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -478,8 +479,9 @@ div.content {
 
 .box {
   width: 100%;
-  display: flex;
+  display: flexbox;
   align-items: center;
+  margin-left: 18px;
 }
 
 @media screen and (min-width: 600px) {

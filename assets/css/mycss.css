@@ -63,12 +63,11 @@ header img {
 /* .inner, .project {
   display: inline-flex;
 } */
-/* .inner1 {
-  display: inline-flex;
-} */
+.inner1 {
+  display: inline-block;
+}
 
 .shadow {
-
   box-shadow: 0 0 4px 4px;
 }
 .inner img, .project {
@@ -111,13 +110,26 @@ header img {
     position: relative; 
     top: -10px;
   }
-  .inner1 p {
+  /* .inner1 p {
     width: 58%;
     margin: 0 0 0 2%;
     display: inline-flex;
     position: relative; 
     top: -10px;
-  }
+  } */
+  /* .wrapper1 p { */
+  .inner1 p {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 6px;
+  /* margin-left: 12px; */
+      margin: 0 0 0 2%;
+    display: inline-flex;
+    position: relative; 
+    /* top: -10px; */
+
+}
+
   header p {
     font-size: .9rem;
     line-height: 1.3rem;
@@ -143,21 +155,30 @@ header img {
     }
 }
   @media screen and (min-width: 600px) {
+    .inner1 {
+    display: inline-block !important;
+    }
     .inner1 img {
-    display: block;
-    width: 50%;
+    width: 55%;
+    display: inline-block !important;
+
     }
     .inner1 div {
-    width: 40%;
-    display: inline-block;
+    width: 44%;
+    display: inline-block !important;
   }
     .inner1 h3 {
-     width: 35%;
-      display: flex;
-      font-size: 24pt; 
+    width: 40%;
+    font-size: 1.7rem; 
+    display: inline-block !important;
+
     }
     .inner1 p {
-    width: 35%;
+    width: 45%;
+    margin-left: 24px;
+    font-size: 1rem; 
+    display: inline-block !important;
+
     }
 }
   
@@ -364,12 +385,7 @@ font-size: 1.35rem;
 margin-top: 12px;
 margin-bottom: 12px;
 } */
-.wrapper1 p {
-  width: 100%;
-  font-size: 1.1rem;
-  margin-top: 6px;
-  margin-left: 12px;
-}
+
 /* mobil eleje!!! */
 @media screen and (min-width: 600px) {
   .gallery img {
@@ -380,10 +396,10 @@ margin-bottom: 12px;
     width: 50%;
     float: left;
   }
-  .wrapper1 img {
+  /* .wrapper1 img {
     width: 50%;
     float: left;
-  }
+  } */
   /* 
   .wrapper h3 {
     width: 30%;

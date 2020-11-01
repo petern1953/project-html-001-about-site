@@ -60,13 +60,16 @@ header img {
   padding: 12px;
 }
 
-.inner, .project {
+/* .inner, .project {
   display: inline-flex;
-}
+} */
 
-.inner img {
-  width: 100%;
+.shadow {
+
   box-shadow: 0 0 4px 4px;
+}
+.inner img, .project {
+  width: 100%;
   display: block;
 }
 @media screen and (min-width: 600px) {
@@ -113,6 +116,11 @@ header img {
     display: inline-flex;
     position: relative; 
     top: -10px;
+  }
+  header p {
+    font-size: .9rem;
+    line-height: 1.3rem;
+    margin-right: 4spx;
   }
   
 /* .project {
@@ -328,6 +336,11 @@ nav {
   top: 95px;
   left: 16px;
 }
+  header p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-right: 4spx;
+  }
 div.content {
     width: 31%;
     box-shadow: 1px 1px 0 1px #666666;

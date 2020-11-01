@@ -43,7 +43,7 @@ h1, header {
 }
 
 header img {
-  width: 150px;
+  width: 160px;
   float: left; 
   margin-right: 12px;
 }
@@ -52,23 +52,38 @@ nav.about {
   top: -50px;
   left: 2px;
 }
-.inner3>p, .firstp {
-  width: 60%;
+/* .inner3>p {} */
+
+.firstp {
+  width: 66%;
   float: left;
   position: relative;
   top: -34px;
   left: 4px;
   font-size: 12pt;
+  margin-right: 0;
+  line-height: 13pt;
+
+}
+fieldset {
+  width: 92.5%;
+  border: 1px solid #777777; 
+  border-radius: 6px;
+  margin: 0 8px 9px;
+  padding: 4px 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 601px) {
   header img {
   width: 170px; }
   .firstp {
       font-size: 14pt;
+      line-height: 1.7rem;
       left: 8px;
   }
-
+  fieldset {
+    width: 35%;
+  }
 }
 
 #mainMenu {
@@ -511,7 +526,6 @@ div.content {
 .box {
   width: 45%;
   display: inline-table;
-  /* align-items: center; */
 }
 }
 
@@ -521,13 +535,6 @@ div.content {
 
 legend {
   font-size: 10.5pt;
-}
-fieldset {
-  width: 92.5%;
-  border: 1px solid #777777; 
-  border-radius: 6px;
-  margin: 0 8px 9px;
-  padding: 4px 10px;
 }
 label {
   font-size: 12pt;

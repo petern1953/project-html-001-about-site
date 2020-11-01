@@ -1,26 +1,18 @@
-@import url(font-awesome.min.css);
+/* @import url(font-awesome.min.css); */
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px; } 
-  }
+  } */
 
 html {
     box-sizing: border-box; 
   }
 
-*, *:before, *:after {
-  box-sizing: inherit; 
-}
-
-/* body {
-    background-image: url(/assets/images/win10bg.jpg);
-    background-repeat: repeat;
-} */
 body {
   background: #eeeeee; 
-  color: #444444;
+  color: #666666;
   line-height: 1; 
 }
 
@@ -31,33 +23,124 @@ section {
   margin: 0;
   padding: 0;
   border: 0;
-  /* font-size: 100%; */
-  /* font: inherit; */
-  vertical-align: baseline; 
+  /* vertical-align: baseline;  */
 }
 
-h1 {
-  padding: 8px 0;
+/* header {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+nav {
+  position: absolute;
+  top: 95px;
+  left: 16px;
 }
 
-footer, #mainMenu {
-  padding: 12px 8px;
+
+
+h1, header {
+  padding: 8px 0 12px 10px;
 }
+
+header img {
+  width: 100px;
+  float: left; 
+  margin-right: 12px;
+}
+@media screen and (min-width: 480px) {
+  header img {
+  width: 110px; }
+}
+@media screen and (min-width: 600px) {
+  header img {
+  width: 120px; }
+}
+
 #mainMenu {
   padding: 12px;
 }
 
-article, aside, header, footer, menu, nav, section {
+.inner, .project {
+  display: inline-flex;
+}
+
+.inner img {
+  width: 100%;
+  box-shadow: 0 0 4px 4px;
+  display: block;
+}
+@media screen and (min-width: 600px) {
+.inner img {
+  width: 50%;
+  }
+}
+
+.inner h3 {
+  width: 100%;
+  margin: 0 0 0 3%;
+    font-size: 1rem; }
+
+.inner div {
+  width: 100%;
+  display: inline-block;
+}
+
+    @media screen and (min-width: 600px) {
+      .inner h3 {
+          width: 35%;
+      /* display: inline-block; } */
+      font-size: 1.1rem; }
+      }
+
+    @media screen and (min-width: 924px) {
+      .inner h3 {
+        font-size: 1.2rem; }
+      }
+
+    @media screen and (min-width: 1180px) {
+      .inner h3 {
+        font-size: 1.5rem; }
+      }
+
+    @media screen and (min-width: 1600px) {
+      .inner h3 {
+        font-size: 2rem; }
+      }
+
+  .inner p {
+    width: 58%;
+    margin: 0 0 0 2%;
+    display: inline-flex;
+    position: relative; 
+    top: -10px;
+  }
+  
+/* .project {
+  width: 24%;
+} */
+
+footer {
+  padding: 12px 10px;
+}
+
+article, header, footer, menu, nav, section {
   display: block; 
 }
 
 #header, #footer {
   background-color: #333333;
+  width: 100%;
+  display: block;
 }
 
-ol, ul {
-  list-style: none; 
+ul {
+  /* list-style: none;  */
+  list-style-type:none;
 }
+/* ol, ul {
+  list-style: none; 
+} */
 
 body, input, select, textarea {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -89,11 +172,10 @@ a:hover {
     color: crimson;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-weight: 300;
-  line-height: 1.5;
   text-transform: uppercase;
-  margin: .2rem 0 1.5rem .5rem; 
+  margin: .2rem 0 1.5rem .2rem; 
 }
 
 h1 {
@@ -109,10 +191,6 @@ h2 {
 h3 {
   font-size: 1.25rem; 
 }
-
-/* h4 {
-  font-size: 1rem; 
-} */
 
 h1, h2, h3, h4 {
   color: #777777; 
@@ -147,51 +225,85 @@ h1, h2, h3, h4 {
 input, select, textarea {
   color: #555555; }
 
-input[type="submit"],
-input[type="button"],
+/* input[type="submit"],
+input[type="button"], */
 button,
 div.content {
   appearance: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   border: 1px solid #aaaaaa;
   border-radius: 4px;
-  cursor: pointer;
   display: inline-block;
   font-family: inherit;
   font-weight: 600;
   height: 3.25rem;
-  line-height: 3.25rem;
-  padding: 0 1.75rem;
+  line-height: 3rem;
+  /* padding: 0 1.75rem; */
   text-align: center;
   text-decoration: none;
   white-space: nowrap; 
 }
 
 div.content {
-    width: 32%;
-    margin: auto;
+    width: 31%;
     box-shadow: 1px 1px 0 1px #666666;
     color: crimson; 
-
+    font-size: 1.5vw;
+    padding: 0 .5%;
+    margin-bottom: 10px;
 }
 
+button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #555555;
+  color: #555555 !important;
+  cursor: pointer;
+  padding: 0 1.75rem;
+  /* margin-left: 0 !important; */
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 button:hover {
     box-shadow: 1px 1px 0 1px #666666;
     color: crimson; 
 }
 
+form button {
+  margin-left: 2px;
+}
+
 img {
     width: 100%;
 }
-
-/* 
-//mobilon
-.col{
-  background: red;
+.wrapper, .gallery {
+  display: inline-block;
 }
-// 600px felett
+.gallery, .wrapper, button {
+  background-color: #eeeeee;
+}
+.gallery img {
+  width: 100%;
+  float: left;
+  margin: .5% !important;
+}
 @media (min-width: 600px) {
-  .col{
+  .gallery img {
+    width: 32%;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0.5%;
+}
+
+
+/* //mobilon */
+/* .col {
+  background: red;
+} */
+/* // 600px felett */
+/* @media (min-width: 600px) {
+  .col {
     background: green;
   }
-} */
+}  */

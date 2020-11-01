@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magamról</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/mycss.css">
 </head>
 
 <body>
@@ -16,6 +16,11 @@
         <img src="/assets/images/GBbigpic.jpg" alt="Gill Bates personally">
         <h1>Magamról</h1>
     </header>
+    <!-- <header id="header">
+        <img src="/assets/images/GBbigpic.jpg" alt="Gill Bates personally"
+            style="width: 10%; float: left; margin-right: 8px;">
+        <h1>Magamról</h1>
+    </header> -->
 
     <!-- nav -->
     <nav id="mainMenu" class="links">
@@ -59,7 +64,7 @@
                     úszom, vizipólózom, kiválóan teniszezem.
                 </p>
                 <h3>Nyelvismeret</h3>
-                <ul style="list-style-type:none;">
+                <ul>
                     <li>
                         <h4>Humán nyelvek</h4>
                     </li>
@@ -91,20 +96,25 @@
             </article>
         </section>
         <form action="formCheck">
-            <label for="nevInput">Név</label>
-            <input type="text" name="nevInput" id="nevInput">
-            <label for="mailInput">E-mail-cím</label>
-            <input type="email" name="mailInput" id="mailInput">
-            <label for="messageInput">Üzenet</label>
-            <textarea name="messageInput" id="messageInput" cols="30" rows="10"></textarea>
-            <input type="submit" value="Küldés">
+            <fieldset style="width: 480px; border: 1px solid black; margin: 8px; ">
+                <legend>Amennyiben felkeltettem érdeklődését, kérem, adja meg elérhetőségét, és hagyjon üzenetet!
+                </legend>
+                <label for="nevInput">Név</label><br>
+                <input type="text" name="nevInput" id="nevInput" required><br>
+                <label for="mailInput">E-mail-cím</label><br>
+                <input type="email" name="mailInput" id="mailInput" required><br>
+                <label for="messageInput">Üzenet</label><br>
+                <textarea name="messageInput" id="messageInput" cols="30" rows="5"></textarea>
+            </fieldset>
+            <button onclick="formCheck">Küldés</button>
+            <!-- <input type="submit" value="Küldés"> -->
         </form>
     </main>
 
     <!-- footer -->
     <footer id="footer">
         <button>
-            <a href="#mainMenu">Ugrás az oldal tetejére</a>
+            <a href="#header">Ugrás az oldal tetejére</a>
         </button>
     </footer>
 

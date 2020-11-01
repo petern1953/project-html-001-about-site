@@ -77,6 +77,12 @@ header img {
   width: 100%;
   margin: 0 0 0 3%;
   font-size: 1rem; }
+
+  .inner h3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
   
   .inner div {
     width: 100%;
@@ -98,7 +104,7 @@ header img {
 
   @media screen and (min-width: 600px) {
     .inner img {
-    display: flex;
+    display: block;
     width: 50%;
     }
     .inner div {
@@ -273,7 +279,10 @@ form button {
 img {
     width: 100%;
 }
-.wrapper, .gallery {
+.wrapper {
+  display: inline-block;
+}
+.gallery {
   display: inline-block;
 }
 .gallery, .wrapper, button {
@@ -284,12 +293,12 @@ img {
   float: left;
   margin: .5% !important;
 }
-.wrapper h3 {
-    width: 100%;
-  font-size: 1.35rem;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
+/* .wrapper h3 { */
+  /* width: 100%;
+font-size: 1.35rem;
+margin-top: 12px;
+margin-bottom: 12px;
+} */
 .wrapper p {
   width: 100%;
   font-size: 1.1rem;
@@ -301,11 +310,13 @@ img {
     width: 32%;
     float: left;
   }
+
   .wrapper img {
     width: 50%;
     float: left;
-
   }
+  }
+  /* 
   .wrapper h3 {
     width: 30%;
     float: left;
@@ -315,7 +326,7 @@ img {
   margin-bottom: 12px;
 }
 
-}
+} */
 
 .wrapper {
   width: 100%;

@@ -98,13 +98,20 @@ header img {
 
   @media screen and (min-width: 600px) {
     .inner img {
-            display: inline-flex;
-      width: 50%;
-      }
+    display: flex;
+    width: 50%;
+    }
+    .inner div {
+    width: 40%;
+    display: inline-block;
+  }
     .inner h3 {
-          width: 35%;
-      display: inline-flex;
+     width: 35%;
+      display: flex;
       font-size: 24pt; 
+    }
+    .inner p {
+    width: 35%;
     }
 }
   
@@ -289,7 +296,7 @@ img {
   margin-top: 6px;
   margin-left: 12px;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .gallery img {
     width: 32%;
     float: left;

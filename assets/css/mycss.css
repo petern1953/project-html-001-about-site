@@ -63,7 +63,12 @@ nav.about {
 
 @media screen and (min-width: 600px) {
   header img {
-  width: 200px; }
+  width: 170px; }
+  .firstp {
+      font-size: 14pt;
+      left: 8px;
+  }
+
 }
 
 #mainMenu {

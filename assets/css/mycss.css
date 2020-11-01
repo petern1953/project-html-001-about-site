@@ -293,6 +293,18 @@ img {
   float: left;
   margin: .5% !important;
 }
+
+.wrapper {
+  width: 100%;
+  padding: 0.5%;
+}
+.wrapper1 {
+  width: 100%;
+  padding: 0.5%;
+  display: inline-block;
+  background-color: #eeeeee;
+}
+
 /* .wrapper h3 { */
   /* width: 100%;
 font-size: 1.35rem;
@@ -305,33 +317,51 @@ margin-bottom: 12px;
   margin-top: 6px;
   margin-left: 12px;
 }
+
+/* .wrapper1 h3 { */
+  /* width: 100%;
+font-size: 1.35rem;
+margin-top: 12px;
+margin-bottom: 12px;
+} */
+.wrapper1 p {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+/* mobil eleje!!! */
 @media screen and (min-width: 600px) {
   .gallery img {
     width: 32%;
     float: left;
   }
-
   .wrapper img {
     width: 50%;
     float: left;
   }
+  .wrapper1 img {
+    width: 50%;
+    float: left;
   }
   /* 
   .wrapper h3 {
     width: 30%;
     float: left;
-
   font-size: 18pt;
   margin-top: 12px;
   margin-bottom: 12px;
 }
-
+  .wrapper1 h3 {
+    width: 30%;
+    float: left;
+  font-size: 18pt;
+  margin-top: 12px;
+  margin-bottom: 12px;
 } */
-
-.wrapper {
-  width: 100%;
-  padding: 0.5%;
 }
+/* mobil vége!!! */
+
 
 /* Így kell responsivvá tenni: */
 /* //mobil FIRST */

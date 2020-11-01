@@ -110,17 +110,17 @@
             </article>
         </section>
         <form action="formCheck">
-            <fieldset style="width: 480px; border: 1px solid black; margin: 8px; ">
-                <legend>Amennyiben felkeltettem érdeklődését, kérem, adja meg elérhetőségét, és hagyjon üzenetet!
+            <fieldset>
+                <legend>Ha felkeltettem érdeklődését, kérem, adja meg elérhetőségét, és hagyjon üzenetet!
                 </legend>
                 <label for="nevInput">Név</label><br>
-                <input type="text" name="nevInput" id="nevInput" required><br>
+                <input type="text" name="nevInput" id="nevInput" required size="59"><br>
                 <label for="mailInput">E-mail-cím</label><br>
-                <input type="email" name="mailInput" id="mailInput" required><br>
+                <input type="email" name="mailInput" id="mailInput" required size="59"><br>
                 <label for="messageInput">Üzenet</label><br>
-                <textarea name="messageInput" id="messageInput" cols="30" rows="5"></textarea>
+                <textarea name="messageInput" id="messageInput" cols="60" rows="2"></textarea>
+                <button onclick="formCheck">Küldés</button>
             </fieldset>
-            <button onclick="formCheck">Küldés</button>
             <!-- <input type="submit" value="Küldés"> -->
         </form>
     </main>

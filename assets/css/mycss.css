@@ -513,3 +513,27 @@ div.content {
 .box h3 {
   margin-bottom: 4px;
 }
+
+legend {
+  font-size: 10.5pt;
+}
+fieldset {
+  width: 92.5%;
+  border: 1px solid #777777; 
+  border-radius: 6px;
+  margin: 0 8px 9px;
+  padding: 4px 10px;
+}
+label {
+  font-size: 12pt;
+}
+
+form button {
+  height: 38px;
+  margin-bottom: 12px;
+  /* padding: 14px; */
+  font-size: 12pt;
+  line-height: 12pt;
+  margin-left: 16px;
+  margin-left: 40%;
+}

@@ -413,7 +413,7 @@ margin-bottom: 12px;
 } */
 
 /* mobil eleje!!! */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   .gallery img {
     width: 32%;
     float: left;

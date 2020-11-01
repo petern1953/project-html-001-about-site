@@ -43,17 +43,26 @@ h1, header {
 }
 
 header img {
-  width: 100px;
+  width: 150px;
   float: left; 
   margin-right: 12px;
 }
-@media screen and (min-width: 480px) {
-  header img {
-  width: 110px; }
+nav.about {
+  position: relative;
+  top: -50px;
+  left: 2px;
 }
+.inner3>p, .firstp {
+  width: 60%;
+  float: left;
+  position: relative;
+  top: -34px;
+  font-size: 12pt;
+}
+
 @media screen and (min-width: 600px) {
   header img {
-  width: 120px; }
+  width: 200px; }
 }
 
 #mainMenu {
@@ -466,6 +475,13 @@ div.content {
     margin-bottom: 10px;
 }
 }
+
+.box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 600px) {
 nav {
   position: absolute;
@@ -484,5 +500,10 @@ div.content {
     font-size: 12pt;
     padding: 0 .5%;
     margin-bottom: 10px;
+}
+.box {
+  width: 45%;
+  display: inline-table;
+  /* align-items: center; */
 }
 }

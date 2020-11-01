@@ -343,10 +343,16 @@ img {
 .wrapper {
   display: inline-block;
 }
+.wrapper2 {
+  display: inline-block;
+}
 .gallery {
   display: inline-block;
 }
 .gallery, .wrapper, button {
+  background-color: #eeeeee;
+}
+.wrapper2 {
   background-color: #eeeeee;
 }
 .gallery img {
@@ -356,6 +362,10 @@ img {
 }
 
 .wrapper {
+  width: 100%;
+  padding: 0.5%;
+}
+.wrapper2 {
   width: 100%;
   padding: 0.5%;
 }
@@ -373,6 +383,12 @@ margin-top: 12px;
 margin-bottom: 12px;
 } */
 .wrapper p {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.wrapper2 p {
   width: 100%;
   font-size: 1.1rem;
   margin-top: 6px;
@@ -396,6 +412,10 @@ margin-bottom: 12px;
     width: 50%;
     float: left;
   }
+  /* .wrapper2 img {
+    width: 50%;
+    float: left;
+  } */
   /* .wrapper1 img {
     width: 50%;
     float: left;

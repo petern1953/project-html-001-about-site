@@ -63,12 +63,19 @@ header img {
 /* .inner, .project {
   display: inline-flex;
 } */
+/* .inner1 {
+  display: inline-flex;
+} */
 
 .shadow {
 
   box-shadow: 0 0 4px 4px;
 }
 .inner img, .project {
+  width: 100%;
+  display: block;
+}
+.inner1 img, .project {
   width: 100%;
   display: block;
 }
@@ -83,13 +90,28 @@ header img {
   margin-bottom: 12px;
 }
 
-  
+.inner1 h3 {
+  width: 100%;
+  margin: 12px 0 12px 3%;
+  font-size: 1rem; }
+
   .inner div {
+    width: 100%;
+    display: inline-block;
+  }
+  .inner1 div {
     width: 100%;
     display: inline-block;
   }
   
   .inner p {
+    width: 58%;
+    margin: 0 0 0 2%;
+    display: inline-flex;
+    position: relative; 
+    top: -10px;
+  }
+  .inner1 p {
     width: 58%;
     margin: 0 0 0 2%;
     display: inline-flex;
@@ -117,6 +139,24 @@ header img {
       font-size: 24pt; 
     }
     .inner p {
+    width: 35%;
+    }
+}
+  @media screen and (min-width: 600px) {
+    .inner1 img {
+    display: block;
+    width: 50%;
+    }
+    .inner1 div {
+    width: 40%;
+    display: inline-block;
+  }
+    .inner1 h3 {
+     width: 35%;
+      display: flex;
+      font-size: 24pt; 
+    }
+    .inner1 p {
     width: 35%;
     }
 }

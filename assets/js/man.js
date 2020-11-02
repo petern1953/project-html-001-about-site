@@ -1,0 +1,3 @@
+function formCheck() {
+    return true;
+}

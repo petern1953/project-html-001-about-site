@@ -1,10 +1,4 @@
-/* @import url(font-awesome.min.css); */
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
-
-/* @media screen and (max-width: 480px) {
-  html, body {
-    min-width: 320px; } 
-  } */
 
 html {
     box-sizing: border-box; 
@@ -23,14 +17,7 @@ section {
   margin: 0;
   padding: 0;
   border: 0;
-  /* vertical-align: baseline;  */
 }
-
-/* header {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 
 nav {
   position: absolute;
@@ -52,7 +39,6 @@ nav.about {
   top: -50px;
   left: 2px;
 }
-/* .inner3>p {} */
 
 .firstp {
   width: 66%;
@@ -85,7 +71,6 @@ fieldset {
     width: 35%;
   }
   .inner3 div:nth-child(5) p {
-    /* color: blue; */
     max-width: 290px;
   }
 }
@@ -94,9 +79,6 @@ fieldset {
   padding: 12px;
 }
 
-/* .inner, .project {
-  display: inline-flex;
-} */
 .inner1 {
   display: inline-block;
 }
@@ -144,23 +126,14 @@ fieldset {
     position: relative; 
     top: -10px;
   }
-  /* .inner1 p {
-    width: 58%;
-    margin: 0 0 0 2%;
-    display: inline-flex;
-    position: relative; 
-    top: -10px;
-  } */
-  /* .wrapper1 p { */
+
   .inner1 p {
   width: 100%;
   font-size: 1.1rem;
   margin-top: 6px;
-  /* margin-left: 12px; */
       margin: 0 0 0 2%;
     display: inline-flex;
     position: relative; 
-    /* top: -10px; */
 
 }
 
@@ -215,10 +188,6 @@ fieldset {
 
     }
 }
-  
-/* .project {
-  width: 24%;
-} */
 
 footer {
   padding: 12px 10px;
@@ -235,7 +204,6 @@ article, header, footer, menu, nav, section {
 }
 
 ul {
-  /* list-style: none;  */
   list-style-type:none;
 }
 ol {
@@ -323,10 +291,9 @@ h1, h2, h3, h4 {
 }
 
 input, select, textarea {
-  color: #555555; }
+  color: #555555; 
+}
 
-/* input[type="submit"],
-input[type="button"], */
 button,
 div.content {
   appearance: none;
@@ -338,7 +305,6 @@ div.content {
   font-weight: 600;
   height: 3.25rem;
   line-height: 3rem;
-  /* padding: 0 1.75rem; */
   text-align: center;
   text-decoration: none;
   white-space: nowrap; 
@@ -359,7 +325,6 @@ button {
   color: #555555 !important;
   cursor: pointer;
   padding: 0 1.75rem;
-  /* margin-left: 0 !important; */
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 button:hover {
@@ -410,12 +375,6 @@ img {
   background-color: #eeeeee;
 }
 
-/* .wrapper h3 { */
-  /* width: 100%;
-font-size: 1.35rem;
-margin-top: 12px;
-margin-bottom: 12px;
-} */
 .wrapper p {
   width: 100%;
   font-size: 1.1rem;
@@ -429,13 +388,6 @@ margin-bottom: 12px;
   margin-left: 12px;
 }
 
-/* .wrapper1 h3 { */
-  /* width: 100%;
-font-size: 1.35rem;
-margin-top: 12px;
-margin-bottom: 12px;
-} */
-
 /* mobil eleje!!! */
 @media screen and (min-width: 601px) {
   .gallery img {
@@ -446,44 +398,8 @@ margin-bottom: 12px;
     width: 50%;
     float: left;
   }
-  /* .wrapper2 img {
-    width: 50%;
-    float: left;
-  } */
-  /* .wrapper1 img {
-    width: 50%;
-    float: left;
-  } */
-  /* 
-  .wrapper h3 {
-    width: 30%;
-    float: left;
-  font-size: 18pt;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-  .wrapper1 h3 {
-    width: 30%;
-    float: left;
-  font-size: 18pt;
-  margin-top: 12px;
-  margin-bottom: 12px;
-} */
 }
 /* mobil vége!!! */
-
-
-/* Így kell responsivvá tenni: */
-/* //mobil FIRST */
-/* .col {
-  background: red;
-} */
-/* // 600px felett */
-/* @media (min-width: 600px) {
-  .col {
-    background: green;
-  }
-}  */
 
 @media screen and (min-width: 480px) {
 nav {
@@ -547,7 +463,6 @@ label {
 form button {
   height: 38px;
   margin-bottom: 12px;
-  /* padding: 14px; */
   font-size: 12pt;
   line-height: 12pt;
   margin-left: 16px;

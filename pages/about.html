@@ -16,11 +16,6 @@
         <img src="/assets/images/GBbigpic2.png" alt="Gill Bates personally">
         <h1>Magamról</h1>
     </header>
-    <!-- <header id="header">
-        <img src="/assets/images/GBbigpic.jpg" alt="Gill Bates personally"
-            style="width: 10%; float: left; margin-right: 8px;">
-        <h1>Magamról</h1>
-    </header> -->
 
     <!-- nav -->
     <nav id="mainMenu" class="links about">
@@ -116,11 +111,11 @@
                 <legend>Ha felkeltettem érdeklődését, kérem, adja meg elérhetőségét, és hagyjon üzenetet!
                 </legend>
                 <label for="nevInput">Név</label><br>
-                <input type="text" name="nevInput" id="nevInput" required size="59"><br>
+                <input type="text" name="nevInput" id="nevInput" required size="59" minlength="5"><br>
                 <label for="mailInput">E-mail-cím</label><br>
                 <input type="email" name="mailInput" id="mailInput" required size="59"><br>
                 <label for="messageInput">Üzenet</label><br>
-                <textarea name="messageInput" id="messageInput" cols="60" rows="2"></textarea>
+                <textarea name="messageInput" id="messageInput" cols="60" rows="2" minlength="20"></textarea>
                 <button onclick="formCheck">Küldés</button>
             </fieldset>
             <!-- <input type="submit" value="Küldés"> -->
